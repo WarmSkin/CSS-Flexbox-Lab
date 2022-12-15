@@ -1,5 +1,6 @@
 html {
-    box-sizing: border-box
+    box-sizing: border-box;
+    font-family: var(var(--f-family));
 }
 
 /* The Universal Selector */
@@ -10,14 +11,17 @@ html {
       but can be over-ridden as needed */
   box-sizing: inherit;
 }
-  
+
+.root {
+  --f-family: "acumin-pro";
+}
+
 body {
   background-color: #fff;
 /* Use a system font, if none are available use an available sans-sarif   font */
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   margin: 0;
-  font-family: "acumin-pro","Acumin Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
   line-height: 1.3;
 }
 
@@ -47,7 +51,6 @@ nav div {
 div button {
   border-radius: 100px;
   height: 35px;
-  font-family: "acumin-pro","Acumin Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 600;
   font-size: 16px;
   padding: 0 15px;
